@@ -12,7 +12,7 @@ const { TextDecoder } = require('util');
 const PORT = process.env.PORT || 8000;
 const UUID = process.env.UUID || "a2056d0d-c98e-4aeb-9aab-37f64edd5710";
 const PROXY_IP = process.env.PROXYIP || ""; // 想要转发的优选IP (可选)
-const SUB_PATH = process.env.SUB_PATH || "sub"; // 订阅路径
+const SUB_PATH = process.env.SUB_PATH || "study"; // 订阅路径
 
 console.log(`Node.js VLESS Server Running on port ${PORT}...`);
 console.log(`UUID: ${UUID}`);
@@ -187,3 +187,4 @@ wss.on('connection', (ws) => {
 server.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
 });
+
